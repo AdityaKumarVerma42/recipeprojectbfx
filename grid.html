@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(autofill ,minmax(200px 1fr) );
+            grid-gap: 20px;
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns:minmax(50px ,auto);
+        }
+        .items{
+            background-color: lightcoral;
+            border: 3px green solid;
+            border-radius: 3px; 
+        }
+        #item-1{
+            grid-column-start: ;
+        }
+        #item-2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item-1"> dabba 1<!--Dabba 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis aut hic mollitia, pariatur sunt inventore possimus nisi numquam aliquid fugiat dolorem tempore dicta esse ipsum, expedita cupiditate nesciunt adipisci porro nulla rem atque provident distinctio! Vitae, corrupti. Minus voluptatem necessitatibus tempore commodi, eum minima ullam consequuntur dolorum, neque aut recusandae? Tempora eius nobis incidunt a. Voluptate libero ullam, illum assumenda nesciunt sunt! Magni, molestiae, debitis distinctio porro quisquam non sit enim velit harum, atque aperiam quod quae eos eaque deleniti officia cum nobis minima accusantium. Distinctio dicta molestias maiores et obcaecati officia saepe alias reiciendis facere iste quasi voluptate nihil rerum mollitia, quia quis cumque possimus vel nam numquam, atque quas consequatur? Reiciendis libero veniam dignissimos eos quo facilis est aperiam illo obcaecati veritatis illum inventore, rerum culpa adipisci. Labore ad molestias nihil expedita ratione ipsam quaerat nostrum recusandae corrupti alias dolorum excepturi natus amet, obcaecati, aperiam vero, libero eius nesciunt sequi optio commodi eos repellendus! Rem, magnam reprehenderit? Adipisci architecto, nam consequuntur, vitae cum eius quaerat ullam alias quo, in sed illo. Mollitia suscipit molestiae vel error saepe autem enim et quo ad, officia alias voluptate quasi aut ducimus pariatur? Assumenda quaerat exercitationem minus. Perspiciatis nulla dolore dolorem laboriosam.</div> --></div>
+        <div class="items" id="item-2">Dabba 2</div>
+        <div class="items">Dabba 3</div>
+        <div class="items">Dabba 4</div>
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

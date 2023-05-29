@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Property</title>
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 900px;
+            width: 90%;
+
+        }
+        #box{
+            float: left;
+            margin: 15px;
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            background-color: lightblue;
+            padding: 1em;
+        }
+        .special{
+            background-color: lightblue;
+            padding: 15px;
+            color: aliceblue;
+
+        }
+        .cleared{
+            clear: left ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Float Property</h1>
+    <img id="box" src="data:image/jpeg;base64,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" alt="">
+    <h1 class="special">Resume</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam ducimus itaque. Doloremque et veritatis molestias earum laudantium ad? Quaerat ratione fuga ipsam eaque nesciunt.</p>
+    <p class="cleared">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, omnis labore architecto possimus tempora quas, sed exercitationem qui veniam alias expedita fugiat natus aut laborum voluptatibus, reprehenderit inventore! Modi, ea.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reprehenderit non obcaecati iusto corporis magni ratione labore accusamus vel recusandae.</p>
+    
+</body>
+</html>
